@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body>
+
+
+      <div id="weather-side">
+
+        <h1 id="weather-header">Weather</h1>
+        <div class="city-weather">
+
+          <form class="city-form">
+            <input type="text" class="city-input">
+            <button type="button" class="get-weather-button">Get Weather!</button>
+          </form>
+
+              <p id="temperature"></p>
+              <p id="summary"></p>
+              <p id="humidity"></p>
+
+          </div>
+          <div id="weather-animation">
+              <canvas id="icon" width="128" height="128"></canvas>
+          </div>
+        </div>
+
+      <div id="eightday">
+          <button class="eightbtn">Press me! <br>For a longer forecast!</button>
+          <div class="eightcontent">
+            <ol class="eightlist">
+
+            </ol>
+
+          </div>
+
+      </div>
+
+      <div id="news">
+        <h1 class="news-header">News</h1>
+        <form class="news-form">
+          <input type="text" class="news-input" placeholder="Enter News Source">
+        </form>
+        <div class="news-content">
+          <ul class="headlines">
+          </ul>
+        </div>
+
+      </div>
+
+
+    <script src="weather.js"></script>
+    <script src="news.js"></script>
+
+
+
+  </body>
+</html>
